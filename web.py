@@ -2,6 +2,9 @@ import os
 from html2text import html2text
 from flask import Flask, request
 
+html2text.options['ul_item_mark'] = '-'
+html2text.BODY_WIDTH = 140
+
 app = Flask(__name__)
 
 @app.route("/")
