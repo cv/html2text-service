@@ -8,7 +8,7 @@ def get():
 
 @app.route("/", methods=['POST'])
 def post():
-    return "Thank you for trying!"
+    return "Thank you for trying! Here's your data: '%s'\n" % request.data
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
