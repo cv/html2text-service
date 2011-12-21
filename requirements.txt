@@ -1,2 +1,4 @@
 Flask==0.7.2
-html2text==3.02
+html2text==3.200.0
+chardet==1.0.1
+feedparser==5.1
